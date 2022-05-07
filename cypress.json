@@ -1,3 +1,4 @@
 {
-    "baseUrl":"http://localhost:3000/demo-1"
+    "baseUrl":"http://localhost:3000/demo-1",
+    "experimentalStudio": true
 }

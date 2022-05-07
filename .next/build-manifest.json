@@ -25,15 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/about": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/about.js"
+    ],
     "/category-details": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/category-details.js"
-    ],
-    "/course-details": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/course-details.js"
     ],
     "/demo-1": [
       "static/chunks/webpack.js",
