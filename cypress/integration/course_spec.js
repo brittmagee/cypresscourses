@@ -2,17 +2,9 @@
 
 describe('eTreeks Tests', function(){
     beforeEach('Visit the homepage', function(){
-    //Arrange - setup initial app statecode .
-    
-        //visit homepage
         cy.visit('/')
-        //Act - take an action
-        //query to select first element in 'Most Popular Courses'
-        // cy.scrollTo(0, 500)
-        // cy.get('.wsmenu-list > li > a').click()
-        
-        
     })
+    
     it('Testing Cypress.io', () => {
         cy.get('nav').find('a[href="about"]').then($el=>{
             cy.wrap($el).invoke('show')
@@ -32,7 +24,6 @@ describe('eTreeks Tests', function(){
     it('nav_spec.js', function() {
         /* ==== Generated with Cypress Studio ==== */
         cy.get('.left-link-list > :nth-child(3) > a').click({force: true});
-        //needed to force true to access <a> tag in hover navigation menu
         /* ==== End Cypress Studio ==== */
     });
 })
