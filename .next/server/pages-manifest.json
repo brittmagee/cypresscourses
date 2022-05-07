@@ -2,5 +2,6 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/demo-1": "pages/demo-1.js"
+  "/reviews": "pages/reviews.js",
+  "/course-details": "pages/course-details.js"
 }
