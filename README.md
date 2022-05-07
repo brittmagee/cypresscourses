@@ -1,5 +1,7 @@
-## Brittani's Technical Interview
-Hi Tia, Jada, Abram and Jonathan! Please reference the information below to get everything up and running. I wanted to use a website template to create my tests and CI. Hope you enjoy! -Brittani
+## Brittani's CSM Technical Interview | Cypress.io
+Hi Tia, Jada, Abram and Jonathan! 
+Please reference the information below to get everything up and running. I wanted to use a website template to create my tests and CI. 
+Hope you enjoy! -Brittani
 
 ### Cypress.io practice testing site with React.js
 #### Website template can be downloaded at [Envato Elements | eTreeks - Online Course & Education React JS](https://elements.envato.com/etreeks-online-courses-education-react-js-them-FU7RYMT)

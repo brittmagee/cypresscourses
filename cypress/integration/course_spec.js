@@ -1,10 +1,11 @@
 /// <reference types="Cypress" />
+// syntax in VS Code was defaulting to other autofills
 
-describe('eTreeks Tests', function(){
-    beforeEach('Visit the homepage', function(){
+describe('eTreeks Homepage Tests', () => {
+    beforeEach('Visit the homepage', () => {
         cy.visit('/')
     })
-    
+
     it('Testing Cypress.io', () => {
         cy.get('nav').find('a[href="about"]').then($el=>{
             cy.wrap($el).invoke('show')
@@ -18,8 +19,8 @@ describe('eTreeks Tests', function(){
         These tests failed, but I found a work around with the .wrap() and .invoke() from a StackOverflow search
         found at https://stackoverflow.com/questions/48852219/handling-hover-over-menus-using-cypress
         */
+       cy.pause()
     })
-
     /* ==== Test Created with Cypress Studio ==== */
     it('nav_spec.js', function() {
         /* ==== Generated with Cypress Studio ==== */
