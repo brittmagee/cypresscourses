@@ -1,30 +1,31 @@
 /// <reference types="Cypress" />
 // syntax in VS Code was defaulting to other autofills
 
-describe('eTreeks Homepage Tests', () => {
-    beforeEach('Visit the homepage', () => {
+describe('Navigate to courses', () => {
+    it('Start at Homepage', () => {
         cy.visit('/')
     })
 
-    it('Testing Cypress.io', () => {
-        cy.get('nav').find('a[href="about"]').then($el=>{
-            cy.wrap($el).invoke('show')
-            cy.wrap($el).contains('About Us Page').click({force: true})
-        })
-        /* Wanted to navigate through to the About page but was having trouble because of the hover styling that drops down
-        Navigation Menu. Tried the following tests:
-            cy.get('.cbox-1').eq(0).click()
-            cy.get('.breadcrumb').get('li').eq(0).click()
-            cy.get('nav').find('a[href="#"]').eq(0).find('About Us Page').click()
-        These tests failed, but I found a work around with the .wrap() and .invoke() from a StackOverflow search
-        found at https://stackoverflow.com/questions/48852219/handling-hover-over-menus-using-cypress
-        */
-       cy.pause()
-    })
+
     /* ==== Test Created with Cypress Studio ==== */
-    it('nav_spec.js', function() {
+    //Cypress Studio is amazing!! 
+    /*A consistent issue that I have found is when an <a> tag is covered by another element, 
+    I have to include {force: true} for the click command to work.
+    Note: I included cy.pause(); after each step within the test because the DOM snapshot 
+    seemed to take a long time to load when stepping through the test 
+     */
+    it('Navigate to top rated course', function() {
         /* ==== Generated with Cypress Studio ==== */
-        cy.get('.left-link-list > :nth-child(3) > a').click({force: true});
+        cy.visit('/');
+        cy.get(':nth-child(1) > .cbox-1 > a > .cbox-4-txt > .course-tags').click({force: true});
+        cy.pause();
+        cy.get('#headingTwo > .h5-xs > a').click({force: true});
+        cy.pause();
+        cy.get('#headingThree > .h5-xs > a').click({force: true});
+        cy.pause();
+        cy.get('#headingFour > .h5-xs > a').click({force: true});
+        cy.pause();
+        cy.get('.foo-links > :nth-child(3) > a').click({force: true}).url().should('include', '/reviews');
         /* ==== End Cypress Studio ==== */
     });
 })

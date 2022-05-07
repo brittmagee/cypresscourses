@@ -1,4 +1,5 @@
 /// <reference types="Cypress" />
+// syntax in VS Code was defaulting to other autofills
 
 describe('Become a Teacher test', () => {
     it('Start at Homepage', () => {

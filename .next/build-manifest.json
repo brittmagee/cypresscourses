@@ -30,16 +30,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/about": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/about.js"
-    ],
-    "/become-a-teacher": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/become-a-teacher.js"
-    ],
     "/course-details": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -49,6 +39,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/demo-1.js"
+    ],
+    "/reviews": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/reviews.js"
     ]
   },
   "ampFirstPages": []
